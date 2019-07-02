@@ -9,10 +9,7 @@
 /**
  *  使用 invariant() 来断言程序认为为真的状态。
  *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- * *提供 sprintf 风格的格式(只支持 %s)和参数，以提供关于崩溃和您期望的信息。
+ * 提供 sprintf 风格的格式(只支持 %s)和参数，以提供关于崩溃和您期望的信息。
  *
  * The invariant message will be stripped in production, but the invariant
  * will remain to ensure logic does not differ in production.
