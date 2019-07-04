@@ -1,3 +1,4 @@
+```js
 /**
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -51,3 +52,14 @@ function shallowEqual(objA: mixed, objB: mixed): boolean {
 }
 
 export default shallowEqual;
+
+```
+
+该方法用于对两个参数进行浅比较：
+
+* 首先调用 `Object.is` 进行比较，如果为真，则返回 `true`
+* 某一参数不是对象或者等于 `null` 返回 `false`
+* 遍历两个对象，每个属性使用 `Object.is` 进行比较，不同则返回 `true`
+
+
+
